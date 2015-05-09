@@ -169,8 +169,8 @@ firstapp.config(['$routeProvider', '$locationProvider',
 firstapp.filter('imagepath', function() {
     return function(input) {
         if (input) {
-            input = input.replace("gs://magicmirroruploads/uploads/", "");
-            var image = "http://magicmirrornew.appspot.com/showimage?size=300&image=gs://magicmirroruploads/uploads/" + input.trim();
+            input = input.replace("gs://networkbucket/uploads/", "");
+            var image = "http://shaped-entropy-93905.appspot.com/showimage?size=300&image=gs://networkbucket/uploads/" + input.trim();
             image = image.replace(" ", "_");
         }
         return image;
@@ -180,8 +180,8 @@ firstapp.filter('imagepath1', function() {
     return function(input) {
 
         if (input) {
-            input = input.replace("gs://magicmirroruploads/uploads/", "");
-            var image = "http://magicmirrornew.appspot.com/showimage?size=300&image=gs://magicmirroruploads/uploads/" + input.trim();
+            input = input.replace("gs://networkbucket/uploads/", "");
+            var image = "http://shaped-entropy-93905.appspot.com/showimage?size=300&image=gs://networkbucket/uploads/" + input.trim();
             image = image.replace(" ", "_");
         }
         return image;
@@ -191,7 +191,7 @@ firstapp.filter('imagepath2', function() {
     return function(input) {
 
         if (input) {
-            input = input.replace("gs://magicmirroruploads/uploads/", "");
+            input = input.replace("gs://networkbucket/uploads/", "");
             return "img/" + input.trim();
         }
     };
@@ -200,8 +200,8 @@ firstapp.filter('imagepath2', function() {
 firstapp.filter('imagepathbig', function() {
     return function(input) {
         if (input) {
-            input = input.replace("gs://magicmirroruploads/uploads/", "");
-            var image = "http://magicmirrornew.appspot.com/showimage?size=800&image=gs://magicmirroruploads/uploads/" + input.trim();
+            input = input.replace("gs://networkbucket/uploads/", "");
+            var image = "http://shaped-entropy-93905.appspot.com/showimage?size=800&image=gs://networkbucket/uploads/" + input.trim();
 
             image = image.replace(" ", "_");
         }
