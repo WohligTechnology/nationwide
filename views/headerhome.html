@@ -1,0 +1,59 @@
+<div class="header" skrollr class="row marginer">
+    <div class="header-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <div class="rupee">
+                        <select>
+                            <option value="Rupee">INR Rs</option>
+                            <option value="Dollar">Dollar $</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xs-9">
+                    <div class="login-tab pull-right">
+                        <ul>
+                            
+                            <li class="welcome" ng-if="loginlogouttext!='Login'"><a href="#/profile">Welcome, {{alldata.email}} </a></li>
+                            <li><a ng-if="loginlogouttext!='Login'" ng-click="logout()">Logout</a></li>
+                            
+                            <li class="welcome" ng-if="loginlogouttext=='Login'"><a href="#/Login">Login </a></li>
+                            <li><a  ng-click="template.gourl('/Login');" ng-if="loginlogouttext=='Login'">New User</a></li>
+                            
+                            <li class="wish-list"><a  ng-click="template.gourl('/wishlist');"><i class="fa fa-star"></i>Wish List</a>
+                            </li>
+                            <li><a ><i class="fa fa-gift"></i>Gift Card</a>
+                            </li>
+<!--
+                            <li><a >Track Your Order</a>
+                            </li>
+-->
+                            <li class="bag"><a  ng-click="template.gourl('/cart');"><i class="bag"></i>Shopping Bag({{badge}})</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+                <a href="#/home" class="header-logo"><img src="img/logo.png">
+                </a>
+            </div>
+            <div class="col-xs-6">
+                <div id="imaginary_container">
+                    <div class="input-group stylish-input-group pull-right" style="width:200px;">
+                        <input type="text" class="form-control" placeholder="Search..." >
+                        <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

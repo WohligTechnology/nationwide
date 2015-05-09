@@ -1,0 +1,326 @@
+<div class="banner-image">
+    <video id="video" class="home-video" loop="loop" preload="auto" autoplay="autoplay">
+        <source src="img/video.mp4" type="video/mp4">
+            <source src="img/video.webm" type="video/webm">
+    </video>
+    <div class="head-on text-center">
+
+        <h3>Shades of </h3>
+        <h2>Elegance</h2>
+        <a href="https://www.youtube.com/channel/UC6AxdjCyvtuJEGy0DNCWTDA" target="_blank">View Video</a>
+    </div>
+    <div class="playpause" ng-click="changevideostate();"><i class="fa fa-pause" ng-show="videostate=='play'"></i><i class="fa fa-play" ng-show="videostate=='pause'"></i>
+    </div>
+    <div class="playpause muted" ng-click="changesoundstate();"><i class="fa fa-volume-up" ng-show="soundstate=='unmuted'"></i><i class="fa fa-volume-off" ng-show="soundstate=='muted'"></i>
+    </div>
+</div>
+<div class="">
+    <div class="container">
+        <div class=catogory> <span>CATEGORIES</span>
+        </div>
+    </div>
+    <div class="bckgrnd-sliderup">
+        <div class="imageset">
+            <div class="homesrc">
+                <div class="row">
+                    <a  ng-click="template.gourl('/AD-Bangle');">
+                        <div class="col-xs-2">
+                            <div class="img-cont">
+                                <h5> Bangles</h5>
+                                <img src="img/up1.png">
+                            </div>
+                        </div>
+                    </a>
+                    <a  ng-click="template.gourl('/AD-NECKLACE-SET');">
+                        <div class="col-xs-2">
+                            <div class="img-cont">
+                                <h5>Necklace</h5>
+                                <img src="img/up2.png">
+                            </div>
+                        </div>
+                    </a>
+                    <a  ng-click="template.gourl('/FingerRing');">
+                        <div class="col-xs-2">
+                            <div class="img-cont">
+                                <h5> Ring</h5>
+                                <img src="img/up3.png">
+                            </div>
+                        </div>
+                    </a>
+                    <a  ng-click="template.gourl('/Corporate-Earings');">
+                        <div class="col-xs-2">
+                            <div class="img-cont">
+                                <h5> Earing</h5>
+                                <img src="img/up4.png">
+                            </div>
+                        </div>
+                    </a>
+                    <a  ng-click="template.gourl('/AQ-JUDA');">
+                        <div class="col-xs-2">
+                            <div class="img-cont">
+                                <h5>Juda </h5>
+                                <img src="img/up5.png">
+                            </div>
+                        </div>
+                    </a>
+                    <a  ng-click="template.gourl('/AD-PAYAL');">
+                        <div class="col-xs-2">
+                            <div class="img-cont">
+                                <h5> Payal</h5>
+                                <img src="img/up6.png">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+<a ng-click="slidesetprev(showslideset1);">
+    <div class="toggle left">
+        <img src="img/leftbanner.png" alt="" ng-show="showslideset1==1">
+    </div>
+</a>
+<a ng-click="slidesetnext(showslideset1);">
+    <div class="toggle right">
+        <img src="img/rightbanner.png" alt="" ng-show="showslideset1==0">
+    </div>
+</a>
+
+<div style="overflow:hidden;height:250px;text-align: center;">
+    <span ng-repeat="slider in sliders1">
+                <span ng-show="$index<5" class="pickweek">
+                    <div class="proprice proprice2">
+                        <a>
+                            <h5> {{slider.name}}</h5>
+                        </a>
+                    </div>
+                    <a><img src="{{slider.image|imagepath2}}" class="slideset1 slideInLeft" ng-show="showslideset1==0"></a>
+            
+                </span>
+    <span ng-show="$index>=5" class="pickweek">
+                    <div class="proprice proprice2">
+                    <a >
+                        <h5> {{slider.name}}</h5>
+                    </a>
+                </div>
+                    <a ><img src="{{slider.image|imagepath2}}" class="slideset1 slideInRight" ng-show="showslideset1==1"></a>
+                
+                </span>
+    </span>
+</div>
+-->
+
+<!--
+<div class="row bg-grnds">
+    <div class="container">
+        <div class="cls-magic">
+            <div class="col-xs-4">
+                <div class="mid-magic">
+                    <img src=img/mid-1.jpg>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="mid-magic">
+                    <img src=img/mid-2.jpg>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="mid-magic">
+                    <img src=img/mid-3.jpg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+-->
+<div class="bind-all">
+    <div class="banner-image ng-scope parallax-effect">
+        <center class="in-parallax">
+            <img src="img/back2.jpg" alt="" class="img-responsive ">
+        </center>
+    </div>
+    <div class="text-image">
+        <h4>Impressions of Excellence</h4>
+        <div class="button-view">
+            <a>View All</a>
+        </div>
+    </div>
+</div>
+<div class="product-imgdown">
+    <div class="container">
+        <div class="catogory">
+            <span>Whats Trending</span>
+        </div>
+    </div>
+    <div class="bckgrnd-sliderdwn">
+        <div class="imageset">
+            <div class="homesrc">
+                <div class="row">
+<!--
+                    <a href="#category/4" ng-repeat="slide in sliders">
+                        <div class="col-xs-3" class="pickweek">
+                            <div class="pickweek">
+                                                                <img src="{{slide.image | imagepath}}" class="slideset1">
+                                <h5>American Diamond</h5>
+                            </div>
+                        </div>
+                    </a>       
+-->
+                       <a  ng-click="template.gourl('/AD-NECKLACE-SET');">
+                        <div class="col-xs-3" class="pickweek">
+                            <div class="pickweek">
+<!--                                                                <img src="{{slide.image | imagepath}}" class="slideset1">-->
+                                <img src="img/p1.png" class="slideset1">
+                                <h5>American Diamond</h5>
+                            </div>
+                        </div>
+                    </a>
+                    <a  ng-click="template.gourl('/Pearl-Mala');">
+                        <div class="col-xs-3" class="pickweek">
+                            <div class="pickweek">
+                                <img src="img/p2.png" class="slideset1">
+                                <h5>Pearl</h5>
+                            </div>
+                        </div>
+                    </a>
+                    <a  ng-click="template.gourl('/AQ-VICTORIA-SET');">
+                        <div class="col-xs-3" class="pickweek">
+                            <div class="pickweek">
+                                <img src="img/p3.png" class="slideset1">
+                                <h5>Antique</h5>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a  ng-click="template.gourl('/MICRO-SET');">
+                        <div class="col-xs-3" class="pickweek">
+                            <div class="pickweek">
+                                <img src="img/p4.png" class="slideset1">
+                                <h5>Micro Set</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--
+            <div class="homesrc">
+                <div class="row">
+                    <a ng-click="slidesetprev(showslideset1);">
+                        <div class="toggle left">
+                            <img src="img/leftbanner.png" alt="" ng-show="showslideset1==1">
+                        </div>
+                    </a>
+                    <a ng-click="slidesetnext(showslideset1);">
+                        <div class="toggle right">
+                            <img src="img/rightbanner.png" alt="" ng-show="showslideset1==0">
+                        </div>
+                    </a>
+                    <div style="overflow:hidden;height:250px;text-align: center;">
+                        <span ng-repeat="slider in sliders">
+                <span ng-show="$index<4" class="pickweek">
+                    <a><img src="{{slider.image|imagepath2}}" class="slideset1 slideInLeft" ng-show="showslideset1==0">
+                    <h5> {{slider.name}}</h5>
+                     </a>
+                      
+                </span>
+                        <span ng-show="$index>=4" class="pickweek">
+                    <a><img src="{{slider.image|imagepath2}}" class="slideset1 slideInRight" ng-show="showslideset1==1">
+                    <h5> {{slider.name}}</h5>
+                    </a>
+                </span>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+-->
+
+
+        <!--
+    <script>
+        $('#myCarousel1').carousel({
+  interval: 4000
+})
+
+$('.carousel1 .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+  
+  for (var i=0;i<2;i++) {
+    next=next.next();
+    if (!next.length) {
+    	next = $(this).siblings(':first');
+  	}
+    
+    next.children(':first-child').clone().appendTo($(this));
+  }
+});
+    </script>          
+-->
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="jwellerybck">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-4 border-jewell">
+                <div class="text-jellwery">
+                    <h5>JEWELLERY CARE</h5>
+                    <p>
+                        ‘Customer is God’; we believe in it from the day 1 & therefore we not only know for the best sales service but also for the great after sales service. Our Services will make you realize that why we known as the chosen brand for artistic jewelry &amp; the excellent professional services.
+                    </p>
+                    <p class="pull-right"><a href="#/productcare">read more</a></p>
+                    
+                </div>
+            </div>
+            <div class="col-xs-4 endorse">
+                <div class="text-client">
+                    <h5>CLIENT ENDORSEMENT</h5>
+                    <p>
+                        I just received my order and love my purchases! This was my first experience buying Magic Mirror jewellery online.Thank you for your support. Look forward to being an ongoing Magic Mirror customer.
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-2"></div>
+        </div>
+    </div>
+</div>
+<script>
+    jQuery(window).ready(function () {
+        var $onlyhome = {};
+        $onlyhome = jQuery(".parallax-effect");
+        if ($onlyhome.length > 0) {
+            var child = ".in-parallax";
+            $onlyhome.css("overflow", "hidden");
+            var barheight = 400;
+            $onlyhome.height(barheight);
+            var $window = jQuery(window);
+            var top = $onlyhome.offset().top;
+            var height = $onlyhome.height();
+            var windowheight = $window.height();
+            console.log($onlyhome.offset());
+            jQuery(window).scroll(function () {
+                var $window = jQuery(window);
+                var scrolltop = $window.scrollTop();
+                var top = $onlyhome.offset().top;
+                var height = $onlyhome.children(child).height();
+                var windowheight = $window.height();
+
+                if ((scrolltop) > (top - windowheight) && (scrolltop) < (top + height)) {
+                    var difference = (scrolltop) - (top - windowheight);
+                    var pullup = (height - barheight) * difference / (windowheight + height) * (-1.4);
+                    $onlyhome.children(child).css("transform", "translateY(" + pullup + "px)");
+                }
+            });
+        }
+        jQuery(window).scroll(0);
+    });
+</script>
