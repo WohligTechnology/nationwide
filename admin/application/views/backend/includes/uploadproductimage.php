@@ -20,7 +20,7 @@
 				 
 				 
 -->
-                <form action="http://www.magicmirror.in" method="post" enctype="multipart/form-data" id="MyUploadForm">
+                <form action="http://shaped-entropy-93905.appspot.com/" method="post" enctype="multipart/form-data" id="MyUploadForm">
                     <label class="col-sm-2 control-label">Image Upload</label>
                     <div class="col-sm-4">
                         <input name="uploaded_files" id="imageInput" type="file" />
@@ -89,11 +89,11 @@
                                                     $subproduct=substr($row->productimage,0,5);
                                                     if($subproduct=="gs://")
                                                     {
-                                                        echo "http://www.magicmirror.in/showimage?size=300&image=";
+                                                        echo "http://shaped-entropy-93905.appspot.com/showimage?size=300&image=";
                                                     }
                                                     else
                                                     {
-                                                        echo "http://www.magicmirror.in/showimage?size=800&image=gs://magicmirroruploads/uploads/";
+                                                        echo "http://shaped-entropy-93905.appspot.com/showimage?size=800&image=gs://networkbucket/uploads/";
                                                     }
                                                     echo $row->productimage;?>" style="height:100px;width:100px;" /></td>
 						<td><?php if($row->is_default=="1") { echo "Image is default"; } else { echo "";} ?></td>
@@ -160,7 +160,7 @@
     }; 
     $(document).ready(function() { 
         
-        $.getJSON("http://www.magicmirror.in/myuploads",{},function(data) {
+        $.getJSON("http://shaped-entropy-93905.appspot.com/myuploads",{},function(data) {
             console.log(data);
 			
             options = { 
