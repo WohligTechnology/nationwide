@@ -2,20 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="firstapp">
 
 <head ng-controller="headerctrl">
-    <title ng-bind="template.title">Magic Mirror</title>
-    <meta name="name" content="Magic Mirror">
+    <title ng-bind="template.title">Nationwide Fabric</title>
+    <meta name="name" content="Nationwide Fabric">
     <meta name="description" content="{{template.metadescription}}">
     <meta name="keywords" content="{{template.keywords}}">
     <base href="/">
-    <script>
-        var hostname = window.location.hostname;
-        if (hostname == "www.magicmirror.in") {
-            console.log(hostname);
-            window.location.replace("http://magicmirror.in/");
-        } else {
-            console.log("other " + hostname);
-        }
-    </script>
+    
     <script>
         var isMobile = {
             Android: function () {
@@ -38,9 +30,9 @@
             }
         };
 
-        if (isMobile.any()) {
-            window.location = "http://m.magicmirror.in/" + window.location.hash;
-        }
+//        if (isMobile.any()) {
+//            window.location = "http://m.magicmirror.in/" + window.location.hash;
+//        }
     </script>
 
     <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
