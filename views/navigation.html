@@ -9,7 +9,7 @@
 
                     </li>
                     <li ng-mouseover="showsub(0)" ng-mouseleave="hidesub(0)" style="position:static;">
-                        <a>Collections</a>
+                        <a ng-click="template.gourl('/category/collections');">Collections</a>
                         <div class="megamenu" ng-include src="submenuval[0]" ng-show="submenu[0]">
                         </div>
 

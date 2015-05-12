@@ -800,7 +800,7 @@ li.bag a {
 }
 
 .productdetails {
-    position: fixed;
+    /* position: fixed; */
     right: 10px;
     z-index: 1;
     /* background: rgba(226, 226, 226, 0.29); */

@@ -1,5 +1,5 @@
 <div class="banner-image">
-<!--
+    <!--
     <video id="video" class="home-video" loop="loop" preload="auto" autoplay="autoplay">
         <source src="img/video.mp4" type="video/mp4">
             <source src="img/video.webm" type="video/webm">
@@ -16,9 +16,9 @@
     </div>
 -->
     <carousel interval="myInterval">
-      <slide ng-repeat="slide in sliders1" active="slide.active">
-        <img ng-src="{{slide.image}}">
-      </slide>
+        <slide ng-repeat="slide in sliders1" active="slide.active">
+            <img ng-src="{{slide.image}}">
+        </slide>
     </carousel>
 </div>
 <div class="">
@@ -30,39 +30,39 @@
         <div class="imageset">
             <div class="homesrc">
                 <div class="row">
-                    <a  ng-click="">
+                    <a ng-click="">
                         <div class="col-xs-3">
-                            <div class="img-cont">
+                            <div class="img-cont" ng-click="template.gourl('/category/Quilt-Fabric');">
                                 <h5>QUILT FABRIC</h5>
                                 <img src="img/up1.jpg">
                             </div>
                         </div>
                     </a>
-                    <a  ng-click="">
+                    <a ng-click="">
                         <div class="col-xs-3">
-                            <div class="img-cont">
+                            <div class="img-cont" ng-click="template.gourl('/category/Home-Decor-Fabric');">
                                 <h5>HOME DECOR FABRIC</h5>
-                                 <img src="img/up2.jpg">
+                                <img src="img/up2.jpg">
                             </div>
                         </div>
                     </a>
-                    <a  ng-click="">
+                    <a ng-click="">
                         <div class="col-xs-3">
-                            <div class="img-cont">
+                            <div class="img-cont" ng-click="template.gourl('/category/Quilt-Fabric');">
                                 <h5>QUILT FABRIC</h5>
-                                 <img src="img/up1.jpg">
+                                <img src="img/up1.jpg">
                             </div>
                         </div>
                     </a>
-                    <a  ng-click="">
+                    <a ng-click="">
                         <div class="col-xs-3">
                             <div class="img-cont">
                                 <h5> HOME DECOR FABRIC</h5>
-                                 <img src="img/up2.jpg">
+                                <img src="img/up2.jpg">
                             </div>
                         </div>
                     </a>
-<!--
+                    <!--
                     <a  ng-click="template.gourl('/AQ-JUDA');">
                         <div class="col-xs-2">
                             <div class="img-cont">
@@ -168,7 +168,7 @@
         <div class="imageset">
             <div class="homesrc">
                 <div class="row">
-<!--
+                    <!--
                     <a href="#category/4" ng-repeat="slide in sliders">
                         <div class="col-xs-3" class="pickweek">
                             <div class="pickweek">
@@ -178,16 +178,16 @@
                         </div>
                     </a>       
 -->
-                       <a  ng-click="template.gourl('/AD-NECKLACE-SET');">
+                    <a ng-click="template.gourl('/AD-NECKLACE-SET');">
                         <div class="col-xs-3" class="pickweek">
                             <div class="pickweek">
-<!--                                                                <img src="{{slide.image | imagepath}}" class="slideset1">-->
+                                <!--                                                                <img src="{{slide.image | imagepath}}" class="slideset1">-->
                                 <img src="img/p1.png" class="slideset1">
                                 <h5>American Diamond</h5>
                             </div>
                         </div>
                     </a>
-                    <a  ng-click="template.gourl('/Pearl-Mala');">
+                    <a ng-click="template.gourl('/Pearl-Mala');">
                         <div class="col-xs-3" class="pickweek">
                             <div class="pickweek">
                                 <img src="img/p2.png" class="slideset1">
@@ -195,7 +195,7 @@
                             </div>
                         </div>
                     </a>
-                    <a  ng-click="template.gourl('/AQ-VICTORIA-SET');">
+                    <a ng-click="template.gourl('/AQ-VICTORIA-SET');">
                         <div class="col-xs-3" class="pickweek">
                             <div class="pickweek">
                                 <img src="img/p3.png" class="slideset1">
@@ -204,7 +204,7 @@
 
                         </div>
                     </a>
-                    <a  ng-click="template.gourl('/MICRO-SET');">
+                    <a ng-click="template.gourl('/MICRO-SET');">
                         <div class="col-xs-3" class="pickweek">
                             <div class="pickweek">
                                 <img src="img/p4.png" class="slideset1">
