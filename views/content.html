@@ -1,4 +1,5 @@
 <div class="banner-image">
+<!--
     <video id="video" class="home-video" loop="loop" preload="auto" autoplay="autoplay">
         <source src="img/video.mp4" type="video/mp4">
             <source src="img/video.webm" type="video/webm">
@@ -13,6 +14,12 @@
     </div>
     <div class="playpause muted" ng-click="changesoundstate();"><i class="fa fa-volume-up" ng-show="soundstate=='unmuted'"></i><i class="fa fa-volume-off" ng-show="soundstate=='muted'"></i>
     </div>
+-->
+    <carousel interval="myInterval">
+      <slide ng-repeat="slide in sliders1" active="slide.active">
+        <img ng-src="{{slide.image}}">
+      </slide>
+    </carousel>
 </div>
 <div class="">
     <div class="container">
@@ -23,38 +30,39 @@
         <div class="imageset">
             <div class="homesrc">
                 <div class="row">
-                    <a  ng-click="template.gourl('/AD-Bangle');">
-                        <div class="col-xs-2">
+                    <a  ng-click="">
+                        <div class="col-xs-3">
                             <div class="img-cont">
-                                <h5> Bangles</h5>
-                                <img src="img/up1.png">
+                                <h5>QUILT FABRIC</h5>
+                                <img src="img/up1.jpg">
                             </div>
                         </div>
                     </a>
-                    <a  ng-click="template.gourl('/AD-NECKLACE-SET');">
-                        <div class="col-xs-2">
+                    <a  ng-click="">
+                        <div class="col-xs-3">
                             <div class="img-cont">
-                                <h5>Necklace</h5>
-                                <img src="img/up2.png">
+                                <h5>HOME DECOR FABRIC</h5>
+                                 <img src="img/up2.jpg">
                             </div>
                         </div>
                     </a>
-                    <a  ng-click="template.gourl('/FingerRing');">
-                        <div class="col-xs-2">
+                    <a  ng-click="">
+                        <div class="col-xs-3">
                             <div class="img-cont">
-                                <h5> Ring</h5>
-                                <img src="img/up3.png">
+                                <h5>QUILT FABRIC</h5>
+                                 <img src="img/up1.jpg">
                             </div>
                         </div>
                     </a>
-                    <a  ng-click="template.gourl('/Corporate-Earings');">
-                        <div class="col-xs-2">
+                    <a  ng-click="">
+                        <div class="col-xs-3">
                             <div class="img-cont">
-                                <h5> Earing</h5>
-                                <img src="img/up4.png">
+                                <h5> HOME DECOR FABRIC</h5>
+                                 <img src="img/up2.jpg">
                             </div>
                         </div>
                     </a>
+<!--
                     <a  ng-click="template.gourl('/AQ-JUDA');">
                         <div class="col-xs-2">
                             <div class="img-cont">
@@ -71,6 +79,7 @@
                             </div>
                         </div>
                     </a>
+-->
                 </div>
             </div>
         </div>
@@ -266,6 +275,7 @@ $('.carousel1 .item').each(function(){
 -->
     </div>
 </div>
+<!--
 <div class="clearfix"></div>
 <div class="jwellerybck">
     <div class="container">
@@ -293,6 +303,7 @@ $('.carousel1 .item').each(function(){
         </div>
     </div>
 </div>
+-->
 <script>
     jQuery(window).ready(function () {
         var $onlyhome = {};

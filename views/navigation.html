@@ -17,12 +17,15 @@
 
                     <li class="celebrity">
                         <a class=""  ng-click="template.gourl('/celebrities');">Store Locator</a>
-
+                    </li> 
+                        <li class="celebrity">
+                        <a class=""  ng-click="template.gourl('/contacttus');">Contact Us</a>
                     </li>       
+<!--
                     <li class="pull-right" ng-if="account=='1'">
                         <a class=""  ng-click="template.gourl('/myaccount');">Contact Us</a>
-
                     </li>
+-->
                 </ul>
             </div>
         </div>
@@ -38,8 +41,7 @@
                 <ul class="nav nav-pills mainmenu pull-right" ng-class="ishome">
 
                     <li>
-                        <a  ng-click="template.gourl('/aboutus');">Designer</a>
-
+                        <a  ng-click="template.gourl('/aboutus');">About Us</a>
                     </li>
                     <li ng-mouseover="showsub(0)" ng-mouseleave="hidesub(0)" style="position:static;">
                         <a>Collections</a>
@@ -47,22 +49,26 @@
                         </div>
                     </li>
 
+<!--
                     <li ng-mouseover="showsub(1)" ng-mouseleave="hidesub(1)" style="position:static;" class="magic-bg">
                         <a href="">Miss Universe</a>
                         <div class="megamenu" ng-include src="submenuval[1]" ng-show="submenu[1]">
                         </div>
                     </li>
+-->
                     <li>
                         <a class=""  ng-click="template.gourl('/contact');">Store Locator</a>
 
                     </li>
                     <li>
-                        <a class=""  ng-click="template.gourl('/celebrities');">Celebrity Column</a>
+                        <a class=""  ng-click="template.gourl('/celebrities');">Contact Us</a>
                     </li>
+<!--
                                                         <li ng-if="account=='1'">
                         <a class="" ng-click="template.gourl('/myaccount');">My Account</a>
 
                     </li>
+-->
                     <!--
                     <li ng-mouseover="showsub(6)" ng-mouseleave="hidesub(6)">
                         <a href="#/comingsoon">Gift Card</a>

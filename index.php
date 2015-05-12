@@ -66,10 +66,10 @@
     <!--    <script src="lib/js/angular-animate.js"></script>-->
     <script src="lib/js/angular-route.min.js"></script>
     <!--    <script src="lib/js/angular-resource.min.js"></script>-->
-    <!--
+    
     <script src="lib/js/bootstrap.min.js"></script>
     <script src="lib/js/ui-bootstrap-tpls-0.11.0.min.js"></script>
--->
+
     <script src="lib/js/skrollr.js"></script>
     <script src="lib/js/skrollr.dir.js"></script>
    <script src="lib/js/jstorage.js "></script>
@@ -83,7 +83,7 @@
 
     <script src="lib/range/angular.rangeSlider.js "></script>
     <script src="lib/js/ng-infinite-scroll.min.js "></script>
-    <!--  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.0/ui-bootstrap-tpls.min.js"></script>
 </head>
 
 <body>
