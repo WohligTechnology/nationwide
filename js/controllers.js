@@ -1,3 +1,4 @@
+var cartglobal = {};
 var phonecatControllers = angular.module('phonecatControllers', ['templateservicemod', 'Service', 'ngRoute', 'ngDialog', 'ui.bootstrap']);
 phonecatControllers.controller('home',
     function ($scope, TemplateService, MainJson, $rootScope, $location) {
@@ -425,8 +426,7 @@ phonecatControllers.controller('cart',
         };
         var cartt = function (data, status) {
             console.log(data);
-            MainJson.gettotalcart().success(MainJson.gettotalproductsincart);
-            MainJson.totalcart().success(getsubtotal);
+            cartglobal.cartchange();
         };
         $scope.addtocart = function (id, name, price, quantity, index) {
             // console.log(id+name+price+quantity);
@@ -1077,11 +1077,14 @@ phonecatControllers.controller('badge',
         };
         MainJson.authenticate().success(authenticate);
         //authenticate
-        var totalcart = function (data, status) {
-            console.log(data);
-            $scope.template.totalproducts = data;
-        };
+
         MainJson.gettotalcart().success(MainJson.gettotalproductsincart);
+
+        cartglobal.cartchange = function () {
+
+            MainJson.getcart().success(showcart);
+            MainJson.gettotalcart().success(totalcart);
+        };
 
     });
 
@@ -2028,10 +2031,7 @@ phonecatControllers.controller('product',
         };
         MainJson.getproductdetails($routeParams.ProductId).success(productsuccess);
         var cartt = function (data, status) {
-            console.log(data);
-            console.log("cart cart cart#######################################");
-            console.log(TemplateService.totalproducts);
-            MainJson.gettotalcart().success(MainJson.gettotalproductsincart);
+            cartglobal.cartchange();
         };
         $scope.addtocart = function (id, name, price, quantity) {
             // console.log(id+name+price+quantity);
