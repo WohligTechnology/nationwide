@@ -2024,7 +2024,9 @@ phonecatControllers.controller('product',
             $scope.product.quantity = parseInt($scope.product.quantity);
             $scope.breadcrumbs = data.breadcrumbs;
             $scope.productimage = data.productimage;
+            $scope.productshow = data.productimage[0].image;
             $scope.relatedproduct = data.relatedproduct;
+//            $scope.productimage=[{"image":"gs://networkbucket/uploads/image_1431430599_Large_UQ-056.jpg","order":"0"},{"image":"gs://networkbucket/uploads/image_1431430928_Large_UQ-075.jpg","order":"0"}];
             console.log(data);
             //            $location.hash($scope.product.name.replace(/ /g, "_"));
             //            $location.replace();
@@ -2033,6 +2035,11 @@ phonecatControllers.controller('product',
         var cartt = function (data, status) {
             cartglobal.cartchange();
         };
+
+        $scope.changeproductshow = function (product) {
+            $scope.productshow = product.image;
+        };
+
         $scope.addtocart = function (id, name, price, quantity) {
             // console.log(id+name+price+quantity);
             TemplateService.cartclicked = "animated swing";
