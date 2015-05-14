@@ -2294,7 +2294,7 @@ phonecatControllers.controller('celebrities',
         TemplateService.header = "views/header.html";
         TemplateService.navigation = "views/navigation.html";
         TemplateService.changetitle("Returns");
-        TemplateService.content = "views/celebrities.html";
+        TemplateService.content = "views/comingsoon.html";
         $scope.returnsactive = "active";
         TemplateService.slider = "";
         $scope.loginlogouttext = "Login";
@@ -2372,7 +2372,7 @@ phonecatControllers.controller('aboutus',
         TemplateService.header = "views/header.html";
         TemplateService.navigation = "views/navigation.html";
         TemplateService.changetitle("Returns");
-        TemplateService.content = "views/aboutus.html";
+        TemplateService.content = "views/comingsoon.html";
         $scope.returnsactive = "active";
         TemplateService.slider = "";
         $scope.loginlogouttext = "Login";
